@@ -1,4 +1,5 @@
-export default function TableRoles(){
+export default async function TableRoles(){
+const roles = await
     return(
         <table className="table-auto">
             <thead>
@@ -9,6 +10,9 @@ export default function TableRoles(){
                 </tr>
             </thead>
             <body>
+                {
+                    roles.map
+                }
                 <tr>
                     <td>1</td>
                     <td>Administrador</td>
