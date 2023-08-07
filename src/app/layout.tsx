@@ -14,9 +14,28 @@ export default function RootLayout({
 }: {
   children: React.ReactNode
 }) {
+  const menus=[
+    
+  ]
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <div>
+          <div className='flex flex-row'>
+            <div className='bg-gray-900 basis-1/6'></div>
+            <div className='m-2'>
+              <ul>
+                <li>
+                  <div>Menu</div>
+                </li>
+              </ul>
+            </div>
+            <div className='bg-gray-300 basis-5/6 text-black'>
+              <div className='p-2'>{children}</div>
+            </div>
+          </div>
+        </div>
+      </body>
     </html>
   )
 }
